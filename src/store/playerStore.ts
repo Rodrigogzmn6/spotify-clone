@@ -1,5 +1,5 @@
+import type { Playlist, Song } from '@lib/data'
 import { create } from 'zustand'
-import type { Playlist, Song } from '../lib/data'
 
 interface State {
   isPlaying: boolean

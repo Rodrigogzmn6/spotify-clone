@@ -1,0 +1,27 @@
+---
+import Explore from '@icons/Explore.astro'
+import Home from '@icons/Home.astro'
+import Search from '@icons/Search.astro'
+---
+
+<section class='flex gap-2 w-full cursor-pointer'>
+  <button
+    class='p-3 rounded-full bg-zinc-800 transition-all duration-100 hover:scale-105 self-stretch'>
+    <Home />
+  </button>
+  <div
+    class='bg-zinc-800 border border-transparent flex grow justify-between p-3 rounded-full transition-all duration-300 hover:bg-zinc-700 hover:border-zinc-400'>
+    <div class='border-r grow flex items-center gap-3'>
+      <Search />
+      <input
+        type='text'
+        placeholder='Search...'
+        class='bg-transparent cursor-pointer'
+      />
+    </div>
+    <div
+      class='pl-3 transition-all duration-300 hover:scale-105 hover:text-white'>
+      <Explore />
+    </div>
+  </div>
+</section>
